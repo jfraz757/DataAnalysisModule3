@@ -38,6 +38,6 @@ select name, price from products
 order by price desc limit 3;
 -- Q10) Show customer full names as a single column 'customer_name'
 --      in the format "Last, First".
-select concat(last_name, ', ', first_name) from customers;
+select concat(last_name, ', ', first_name) as customer_name from customers;
 
 
