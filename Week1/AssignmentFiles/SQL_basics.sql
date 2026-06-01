@@ -27,7 +27,7 @@ select name, city, state from stores;
 select orders.order_id, orders.status, sum(order_items.quantity) as total_items 
 from orders
 left join order_items on orders.order_id = order_items.order_id
-group by orders.order_id, orders.status;
+group by orders.order_id;
 
 -- Q8) Show orders placed on '2025-09-04' (any time that day).
 select * from orders
